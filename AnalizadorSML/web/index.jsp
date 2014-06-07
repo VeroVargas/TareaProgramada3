@@ -1,8 +1,4 @@
-<%-- 
-    Document   : index.jsp
-    Created on : 07/06/2014, 08:38:49 AM
-    Author     : Javier
---%>
+
 <%@page import="org.apache.commons.fileupload.FileItem"%>
 <%@page import="java.util.List"%>
 <%@page import="java.io.*"%>
@@ -25,6 +21,7 @@
 			item.write(file);
                         filePath = ubicacion + item.getName();
                         
+                        <%--filePath: contiene la direccion del archivo a analizar--%>
 		}
                 SML s = new SML();
                 String resul  = s.iniciar(filePath);
